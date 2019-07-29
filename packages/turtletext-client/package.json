@@ -1,0 +1,33 @@
+{
+  "name": "@huckleberry/turtletext-client",
+  "version": "0.0.1",
+  "description": "TurtleText Client App",
+  "author": "Dragos Rotaru <dragos@rotaru.co>",
+  "homepage": "https://github.com/askhuckleberry/monorepo#readme",
+  "license": "ISC",
+  "directories": {
+    "lib": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/askhuckleberry/monorepo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/askhuckleberry/monorepo/issues"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.0.4",
+    "ts-node": "^8.1.0",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "@huckleberry/models": "^0.0.1"
+  }
+}
