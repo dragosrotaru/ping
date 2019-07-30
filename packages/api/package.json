@@ -1,0 +1,33 @@
+{
+  "name": "@huckleberry/api",
+  "version": "0.0.1",
+  "private": true,
+  "description": "School Map Web App",
+  "author": "Dragos Rotaru <dragos@rotaru.co>",
+  "homepage": "https://github.com/askhuckleberry/monorepo#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/askhuckleberry/monorepo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/askhuckleberry/monorepo/issues"
+  },
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "twilio": "^3.33.2"
+  },
+  "devDependencies": {
+    "@now/node": "^0.11.1"
+  }
+}
