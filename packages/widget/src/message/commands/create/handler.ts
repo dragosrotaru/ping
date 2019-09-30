@@ -7,13 +7,13 @@ import {
   INTERNAL_SERVER_ERROR,
   IEventRepository,
 } from "@huckleberryai/core";
-import { ICreateTextWidgetMessageCommand } from "./command";
+import { ICreatetWidgetMessageCommand } from "./command";
 
 @injectable()
-export class CreateTextWidgetMessageCommandHandler implements IEventHandler {
+export class CreateWidgetMessageCommandHandler implements IEventHandler {
   public origin = "6017d44d-63af-4382-9ba8-cf548b3c2ac9";
   constructor(private repository: IEventRepository) {}
-  async handle(event: ICreateTextWidgetMessageCommand) {
+  async handle(event: ICreateWidgetMessageCommand) {
     let status: StatusCode = OK;
     let data = null;
     try {
