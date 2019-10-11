@@ -104,15 +104,6 @@ export class WidgetDetail extends React.Component<Props, State> {
 
   async componentDidMount() {
     this.setState({ widget: WidgetSettings("+1 555 555 0100") });
-
-    /*     const ORIGIN_ID = "";
-    const query = WidgetGetSettingsQuery(this.props.match.params.id, ORIGIN_ID);
-    const settingsResult = await postEvent<IWidgetSettings>(query);
-    if (!IsWidgetSettings(settingsResult.data)) {
-      this.setState({ error: true });
-      return;
-    }
-    this.setState({ widget: settingsResult.data }); */
   }
   render() {
     console.log(this.props);
