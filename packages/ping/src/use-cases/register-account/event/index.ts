@@ -3,6 +3,7 @@ import {
   Event,
   NonEmptyString,
   PersonName,
+  EmailAddress,
   OptionFromNullable,
 } from "@huckleberryai/core";
 import * as Command from "../command";
@@ -13,10 +14,10 @@ export const Codec = iots.intersection(
   [
     iots.type({
       type: iots.literal(Name),
-      stripeToken: NonEmptyString.Codec,
-      email: NonEmptyString.Codec,
+      paymentMethod: NonEmptyString.Codec,
+      email: EmailAddress.Codec,
       userName: PersonName.Codec,
-      billingEmail: OptionFromNullable.Codec(NonEmptyString.Codec),
+      billingEmail: OptionFromNullable.Codec(EmailAddress.Codec),
       name: OptionFromNullable.Codec(NonEmptyString.Codec),
     }),
     Event.Codec,
