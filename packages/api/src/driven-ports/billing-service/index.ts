@@ -11,10 +11,10 @@ import {
   Errors,
   SMSClient,
   EmailClient,
-  Phone,
   UUID,
 } from "@huckleberryai/core";
 import { Interfaces } from "@huckleberryai/ping";
+import { AlertPhone } from "../../config";
 
 const StripeError = (error: errors.StripeError) => {
   /*
@@ -81,7 +81,7 @@ export const C = (
         and code ${error.code}: ${error.message}. The customers details: ${
           params.email
         }, ${PersonName.FirstLast(params.userName)}` as NonEmptyString.T,
-        "+15555550100" as Phone.T
+        AlertPhone
       );
       return left(Errors.Adapter.C());
     }

@@ -1,1 +1,9 @@
 # Widget Client
+
+# Production Environment
+
+NODE_ENV
+NPM_TOKEN
+NPM_CONFIG_PRODUCTION
+API_URL
+WIDGET_ID
